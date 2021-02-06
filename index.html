@@ -4,59 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nashville Event Master</title>
-    <!-- replace Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel = "stylesheet" href="assets/style.css">
-    <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <!--Moment.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!--Firebase-->
-    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
-</head>
-<body class="home">
-    <!--nav bar-->
-    <nav class="navbar"> 
-            <a class="navbar-brand">Nashville Music Events</a>
-        </nav>
-    <div class="container">
-        <div class = "row">
-            <div class="col-md-6 welcome text-center">
-                <h1>Concert and Travel Search</h1> 
-                <h4>Attend a Nashville Event by Your Favorite Artist!</h4>
-                <!--display upcoming events from ticketmaster-->
-
-            <div w-type="event-discovery" w-tmapikey="pLOeuGq2JL05uEGrZG7DuGWu6sh2OnMz" 
-            w-googleapikey="AIzaSyBQrJ5ECXDaXVlICIdUBOe8impKIGHDzdA" w-keyword="zz top" 
-            w-theme="newschool" w-colorscheme="light" w-width="530" w-height="600" w-size="25" w-border="2" w-borderradius="7" w-postalcode="" w-radius="" w-country="" w-period="year" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="xxl"></div>
-    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js?v=1"></script>
-                <!--search date to get flights from kayak-->
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search travel date" 
-                    aria-label="Search" id="date" required/>
-                    <input class="form-control mr-sm-2" type="search" placeholder="Departure City" aria-label="Search" id="citySearch">
-                    <input id="homeSearch" type="submit"  value="Search" />
-                </form></div>
-            </div>
-        </div>
-        
-    </div>
-    <!-- add JS
-    <script src=".js"></script>
-    
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnIs9SWvCoCykKiXFp_MvafcDjcSrh0DU&libraries=places&type=(cities)&callback=autofillCities"></script>
-    -->
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="./assets/images/logo.svg">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <!--link non bootstrap rel="stylesheet" href="-->

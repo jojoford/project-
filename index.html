@@ -51,3 +51,128 @@
     -->
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./assets/images/logo.svg">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <!--link non bootstrap rel="stylesheet" href="-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--Moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <title>Nashville Music Events</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+      <section>
+        <div class="ui centered inverted item menu">
+          <div class="item">
+            <img src="./assets/images/logo.svg">
+            Nashville Music Events
+          </div>
+        </div>
+      </section>
+
+          <section id="events">
+            <div class="ui grid container">
+              <div id="searchArtist" class="sixteen wide column mx-auto">
+                <form id="user-form">
+                  <input name="artist" id="artist-search" type="text" placeholder="All, Justin Bieber, The Weeknd..." class="form-input"/>
+                  <button>Search</button>
+                </form>
+              </div>
+          </section>
+
+          <section id="eventResults" class="bg-dark">
+            <div class="eight wide column mx-auto">
+              <div class="ui link list container bg-fade">
+                <h3 class="subtitle bg-light">Showing events for: <span id="event-search-term"></span></h3>
+                <div id="event-container" class="results"></div>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          <section id="flights" class="bg-dark">
+            <div class="ui form container">
+              <div class="sixteen wide column">
+                <h2>Search Flights:</h2><br>
+                </div>
+              <form action="http://www.kayak.com/s/search/air" method="GET">
+                <div class="two fields">
+                  <div id="origin" class="field">
+                    <label><input type="search" name="l1" data-smarty-s="1" size="50" autocomplete="off" placeholder="Origin.." required></label>
+                  </div>
+                  <div id="destination" class="field">
+                    <label><input type="search" name="l2" data-smarty-s="1" size="50" autocomplete="off" placeholder="Destination.." required></label>
+                  </div>
+                </div>
+                <div class="two fields">
+                  <div id="depature" class="field">
+                    <label>Departure Date<input type="date" name="t1"></label>
+                  </div>
+                  <div id="return" class="field">
+                    <label>Return Date<input type="date" name="t2"></label>
+                  </div>
+                </div>
+                  <div class="sixteen wide column">
+                    <button class="fluid ui button" type="submit">Search</button>
+                  </div>
+              </form>
+            </div>
+          </section>
+
+          <section id="lyrics">
+            <div class="ui stackable center aligned grid container bg-fade">
+            <div class="eight wide column mx-auto">
+            <div class="card">
+              <h2>Search Lyrics:</h2>
+              <form id="form">
+                  <input type="text" id="search" placeholder="Enter artist/song name...">
+                  <button>Search</button>
+              </form>
+              </div>
+            </div>
+            <div class="eight wide column">
+              <div>
+              <div id="result" class="container results"></div>
+              </div>
+            </div>
+            </div>
+          </section>
+
+            <footer>
+              <div class="ui stackable center aligned grid container">
+                <div class="five wide column">
+                  <h4>Alyse Alford</h4>
+                  <a href="https://www.linkedin.com/in/alyse-alford-5120761b4/"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="https://github.com/jojoford"><i class="fab fa-github-square fa-2x"></i></a>
+                  <a href="https://jojoford.github.io/portfolio/"><i class="fas fa-globe fa-2x"></i></a>
+                </div>
+                <div class="six wide column">
+                  <h4>Justin Welch</h4>
+                  <a href="https://www.linkedin.com/in/justin-welch-16a3531b9/"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="https://github.com/JWelch775"><i class="fab fa-github-square fa-2x"></i></a>
+                  <a href="https://jwelch775.github.io/professional-portfolio/"><i class="fas fa-globe fa-2x"></i></a>
+                </div>
+                <div class="five wide column">
+                  <h4>Ashton Pierce</h4>
+                  <a href="https://www.linkedin.com/in/ashton-pierce/"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="https://github.com/apierce17"><i class="fab fa-github-square fa-2x"></i></a>
+                  <a href="https://apierce17.github.io/Portfolio/"><i class="fas fa-globe fa-2x"></i></a>
+                </div>
+              </div>
+            </footer>
+    
+    <script src="./assets/js/kayak.js"></script>
+    <script src="./assets/js/script.js"></script>

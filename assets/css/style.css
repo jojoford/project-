@@ -1,28 +1,31 @@
 :root {
-  --primary: #41fbbc;
-  --secondary: #7648b3;
-  --tertiary: #3e2085;
-  --light-dark: #3b60b1;
-  --dark: #2e3138;
-  --border-radius: .3rem;
-  --dark-grey: #1d1d1d;
-}
-
-#forms {
-  padding-top: 50px;
-}
-
-.hero {
-  filter: grayscale(100);
-}
-
-body {
-  background-color: var(--dark-grey);
-  color: white;
+  --primary: #79c8a7;
+  --dark: #292929;
+  --light-grey: #808080;
+  --light: #ffffff;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.ui.menu {
+  border-radius: 0;
+}
+
+a {
+  color: var(--light);
+  padding-right: 8px;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+footer {
+  background-color: black;
+  padding: 50px;
+  color: var(--light);
 }
 
 button {
@@ -37,56 +40,190 @@ input:focus,
 button:focus {
   outline: none;
 }
-header h1 {
-  margin: 0 0 30px;
+
+li {
+  list-style: none;
+  padding-top: 5px;
 }
 
-form {
-  position: relative;
-  width: 500px;
-  max-width: 100%;
+.bg-light {
+  background-color: var(--primary);
+  color: var(--dark);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-form input {
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.txt-light {
+  color: var(--primary);
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+/* Event Search */
+
+#events {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 5%;
+  background-image: url("https://images.pexels.com/photos/2078071/pexels-photo-2078071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+}
+
+#events form input {
   border: 0;
-  border-radius: 50px;
+  width: 70%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 15px 15px;
+}
+
+#events form button {
+  border: 0;
+  width: 20%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 15px 15px;
+  background-color: var(--primary);
+}
+
+/* Event Results */
+
+#eventResults {
+  padding: 25px;
+}
+
+#eventResults h3 {
+  padding: 10px;
+}
+
+.event-list {
+  padding-bottom: 5px;
+  display: flex;
+  }
+
+.results {
+  width: 100%;
+  height: 200px;
+  overflow: auto;
+  margin: auto;
+  padding: 10px;
+}
+
+.bg-fade {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+/* Flight Search */
+
+#flights {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--light);
+}
+
+#origin input {
+  border: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;;
   font-size: 16px;
   padding: 15px 30px;
-  width: 100%;
 }
 
-form button {
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  background-color:var(--primary);
+#destination input {
   border: 0;
-  border-radius: 50px;
-  color: var(--dark-grey);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;;
   font-size: 16px;
-  padding: 13px 30px;
-}
-.container {
-  margin: 30px auto;
-  max-width: 100%;
-  width: 500px;
+  padding: 15px 30px;
 }
 
-.container h2 {
-  font-weight: 300;
+#depature input {
+  border: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;;
+  font-size: 16px;
+  padding: 15px 25px;
 }
 
-.container p {
-  text-align: center;
+#return input {
+  border: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;;
+  font-size: 16px;
+  padding: 15px 25px;
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-}
- 
-.centered button {
-  transform: scale(1.3);
-  margin: 15px;
+#flights button {
+  background-color:var(--primary);
+    border: 0;
+    border-radius: 50px;
+    color: var(--dark);
+    font-size: 16px;
+    padding: 13px 30px;
 }
 
+#flights label {
+  color: var(--light);
+}
+
+/* Lyrics Search */
+
+#lyrics {
+  padding: 50px;
+  background-color: var(--light-grey);
+  color: var(--light);
+  background-image: url("https://images.unsplash.com/photo-1566981731417-d4c8e17a9e82?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+#lyrics form input {
+  border: 0;
+  width: 60%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 15px 15px;
+}
+
+#lyrics form button {
+  border: 0;
+  width: 30%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 15px 15px;
+  background-color: var(--primary);
+}
+
+@media (max-width: 770px) {
+
+  #events form input {
+    width: 60%;
+  }
+  
+  #events form button {
+    width: 30%;
+  }
+
+  #origin input {
+    border-radius: 50px;
+  }
+  
+  #destination input {
+    border-radius: 50px;
+  }
+  
+  #depature input {
+    border-radius: 50px;
+  }
+  
+  #return input {
+    border-radius: 50px;
+  }
+}

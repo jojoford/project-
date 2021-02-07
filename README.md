@@ -1,6 +1,6 @@
 Description : 
 This app allows music fans to discover the shows that will take place in the Nashville area based on their favorite artists. They can get concert tickets, lyrics and book the flight for their event.
-Project 1 for Vanderbilt FS bootcamp. 
+Project 1 for VU FS bootcamp. 
 Powerpoint presentation link: https://docs.google.com/presentation/d/1UWvTeCn0uO4Bq6Z6Wl6QIkJoOvfEVEhN6Q8mEmFG3z4/edit?usp=sharing
 
 Technologies used: 

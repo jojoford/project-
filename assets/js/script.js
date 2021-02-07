@@ -146,7 +146,7 @@ const form = document.getElementById('form');
 const search = document.getElementById('search');
 const result = document.getElementById('result');
 const more = document.getElementById('more');
-
+const ArtistSongs =[];
 const apiURL = 'https://api.lyrics.ovh';
 
 // Search by song or artist
@@ -159,6 +159,10 @@ async function searchSongs(term) {
 
 // Show song and artist in DOM
 function showData(data) {
+//artist/song pulled from local storage
+const ArtistSong = localStorage.getItem('ArtistSong');
+//continue function search and list lyrics
+
     result.innerHTML = `
     <ul class="songs">
       ${data.data
@@ -214,15 +218,17 @@ async function getLyrics(artist, songTitle) {
 // Event listeners
 form.addEventListener('submit', e => {
     e.preventDefault();
-
+    
     const searchTerm = search.value.trim();
-
+   localStorage.setItem('artistSong', searchTerm);
     if (!searchTerm) {
         alert('Please type in a search term');
     } else {
         searchSongs(searchTerm);
     }
+   
 });
+ 
 
 // Get lyrics button click
 result.addEventListener('click', e => {
@@ -234,6 +240,7 @@ result.addEventListener('click', e => {
 
         getLyrics(artist, songTitle);
     }
+    
 });
 
 

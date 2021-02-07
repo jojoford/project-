@@ -4,7 +4,7 @@ Project 1 for Vanderbilt FS bootcamp.
 Powerpoint presentation link: https://docs.google.com/presentation/d/1UWvTeCn0uO4Bq6Z6Wl6QIkJoOvfEVEhN6Q8mEmFG3z4/edit?usp=sharing
 
 Technologies used: 
-HTML, Semantic UI, CSS, Javascript
+HTML, Semantic UI, CSS, Javascript, JQuery
 Ticketmaster api- Lyrics ovh api- Kayak api
 
 Motivation for development: 

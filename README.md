@@ -1,5 +1,7 @@
 Description : 
 This app allows music fans to discover the shows that will take place in the Nashville area based on their favorite artists. They can get concert tickets, lyrics and book the flight for their event.
+Project 1 for Vanderbilt FS bootcamp. 
+Powerpoint presentation link: https://docs.google.com/presentation/d/1UWvTeCn0uO4Bq6Z6Wl6QIkJoOvfEVEhN6Q8mEmFG3z4/edit?usp=sharing
 
 Technologies used: 
 HTML, Semantic UI, CSS, Javascript
@@ -15,4 +17,7 @@ User story:
 4. My search terms are saved in local storage so that even when I refresh the page I can click again on previous searches
 5. Now that I’m ready for the concert I want to search for a flight from a link in the app.
 
+Site:https://jojoford.github.io/project1-NashvilleMusicEventsApp/
+
 screenshot: [![App-screenshot.jpg](https://i.postimg.cc/W1VqsG1D/App-screenshot.jpg)](https://postimg.cc/4m8x5htZ)
+screenshot2: [![app-screenshot2.jpg](https://i.postimg.cc/44cx603h/app-screenshot2.jpg)](https://postimg.cc/c6sWZXws)

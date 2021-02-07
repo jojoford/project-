@@ -18,6 +18,6 @@ User story:
 5. Now that I’m ready for the concert I want to search for a flight from a link in the app.
 
 Site:https://jojoford.github.io/project1-NashvilleMusicEventsApp/
-
+collaborative project github: https://github.com/JWelch775/project1
 screenshot: [![App-screenshot.jpg](https://i.postimg.cc/W1VqsG1D/App-screenshot.jpg)](https://postimg.cc/4m8x5htZ)
 screenshot2: [![app-screenshot2.jpg](https://i.postimg.cc/44cx603h/app-screenshot2.jpg)](https://postimg.cc/c6sWZXws)

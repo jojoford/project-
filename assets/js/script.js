@@ -223,7 +223,10 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     
     const searchTerm = search.value.trim();
-   localStorage.setItem('artistSong', searchTerm);
+   //adding to local storage
+    localStorage.setItem('ArtistSong', searchTerm);
+    const ArtistSong = localStorage.getItem('ArtistSong'); 
+
     if (!searchTerm) {
         alert('Please type in a search term');
     } else {

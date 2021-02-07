@@ -3,7 +3,7 @@ This app allows music fans to discover the shows that will take place in the Nas
 
 Technologies used: 
 HTML, Semantic UI, CSS, Javascript
-Ticketmaster api- Lyrics ovh api- Kayak widget
+Ticketmaster api- Lyrics ovh api- Kayak api
 
 Motivation for development: 
 Generate excitement for the event and trip to Nashville

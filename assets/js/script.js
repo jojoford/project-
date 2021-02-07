@@ -69,6 +69,9 @@ function displayEvents(shows, searchTerm)
             {
                 var eventTitle = showArr[i].name;
                 console.log(eventTitle);
+                 // search saved to local storage
+                localStorage.setItem('eventTitle', searchTerm);
+            const event = localStorage.getItem('eventTitle');
                 var showLink = showArr[i].url;
                 var showPrice = showArr[i].priceRanges
                 console.log(showPrice);
